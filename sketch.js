@@ -137,7 +137,7 @@ class QuadTree{
     this.h = h;
     this.errorLim = errorLim; 
     this.depth = depth;
-    this.maxDepth = 7;  // An additional restriction which prevents us to chunk near pixel size regions (If chunks are too small, we wouldn't be doing much compression)
+    this.maxDepth = 6;  // An additional restriction which prevents us to chunk near pixel size regions (If chunks are too small, we wouldn't be doing much compression)
   }
   
   split(){
