@@ -69,7 +69,7 @@ function setup() {
   image(img, img.width, 0);
   filter(GRAY);
   
-  qTree = new QuadTree(0,0,img.width,img.height,400, 0) // Edit error limit here (Less = more accurate)
+  qTree = new QuadTree(0,0,img.width,img.height,600, 0) // Edit error limit here (Less = more accurate)
   qTree.update(colors);  // Insert colors into quad-tree and begin chunking
     
   qTree.draw();  // Draw compressed image 
@@ -98,9 +98,9 @@ function calculateError(x, y, w, h, colors){  // Calculate the error value of a 
       errorSum += pow(abs(colors[ny][nx][2] - b), 2);  
       
       // Incase we want to have a linear model for calculating error value
-      // errorSum += pow(abs(colors[ny][nx][0] - r), 2);
-      // errorSum += pow(abs(colors[ny][nx][1] - g), 2); 
-      // errorSum += pow(abs(colors[ny][nx][2] - b), 2); 
+      // errorSum += pow(abs(colors[ny][nx][0] - r), 1);
+      // errorSum += pow(abs(colors[ny][nx][1] - g), 1); 
+      // errorSum += pow(abs(colors[ny][nx][2] - b), 1); 
     }
   }
   
@@ -137,7 +137,7 @@ class QuadTree{
     this.h = h;
     this.errorLim = errorLim; 
     this.depth = depth;
-    this.maxDepth = 6;  // An additional restriction which prevents us to chunk near pixel size regions (If chunks are too small, we wouldn't be doing much compression)
+    this.maxDepth = 7;  // An additional restriction which prevents us to chunk near pixel size regions (If chunks are too small, we wouldn't be doing much compression)
   }
   
   split(){
