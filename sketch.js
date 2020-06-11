@@ -194,14 +194,16 @@ class QuadTree{
     }
     else{
       noStroke();
-      let percent = (this.color[0] +  this.color[1] + this.color[2]) / 3 / 255 * 100;
+      let percent = this.fade((this.color[0] +  this.color[1] + this.color[2]) / 3 / 255) * 100;
       let idx = int(percent / interval + 0.9999);
       // Here, we can basically reconstruct the image in whatever shape we want (triagles, rectangles, abstract designs, etc)
       image(random(patternChunks[idx])[0], this.x, this.y, this.w, this.h);
     }
   }
-    
   
+  fade(val){
+    return val * val * val * (val * (val * 6 - 15) + 10);
+  }
 }
 
 
