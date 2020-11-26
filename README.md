@@ -9,10 +9,10 @@ Converts an image into a gray scale version made out of patterns.
   </tr>
   <tr>
     <td><img align="center" src="End Results/Jimi Hendrix (Original).jpg"></td>
-    <td><img align="center" src="End Results/Jimi Hendrix (Converted).png"></td>
+    <td><img align="center" src="End Results/Jimi Hendrix (Converted).PNG"></td>
   </tr>
   <tr>
-    <td><img align="center" src="End Results/Nunu (Converted).PNG"></td>
-    <td><img align="center" src="End Results/Nunu (Original).png"></td>
+    <td><img align="center" src="End Results/shmebulock (Original).png"></td>
+    <td><img align="center" src="End Results/shmebulock (Converted).PNG"></td>
   </tr>
 </table>
