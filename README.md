@@ -5,7 +5,7 @@ Converts an image into a gray scale version made out of patterns.
 <table>
 <tr>
 <td>
-<image, src="End Results/"> 
+<image, src="End Results/Jimi Hendrix (Original).jpg"> 
 </td>
 </tr>
 </table>
