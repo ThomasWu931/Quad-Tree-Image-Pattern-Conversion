@@ -4,7 +4,7 @@ Converts an image into a gray scale version made out of patterns.
 
 <table>
   <tr>
-    <td><img align="center" src="Images/Nunu (Converted).PNG"></td>
-    <td><img align="center" src="Images/NewsPaper Zombie.PNG"></td>
+    <td><img align="center" src="Output/Nunu (Converted).PNG"></td>
+    <td><img align="center" src="Output/NewsPaper Zombie.PNG"></td>
   </tr>
 </table>
