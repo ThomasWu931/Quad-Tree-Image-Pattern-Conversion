@@ -7,7 +7,7 @@ let objCnt = 0;  // Records the number of "chunks" needed to re-create the image
 function preload(){
 
   // Main image to covnert
-  img = loadImage("Jimi_Hendrix.jpg");
+  img = loadImage("Nunu_Render.png");
   
   // patterns.push(loadImage("Patterns/1.PNG"), loadImage("Patterns/2.PNG"));
   patterns.push(loadImage("Patterns/1.PNG"), loadImage("Patterns/2.PNG"), loadImage("Patterns/3.PNG"), loadImage("Patterns/4.PNG"), loadImage("Patterns/5.PNG"), loadImage("Patterns/6.PNG"), loadImage("Patterns/7.PNG"), loadImage("Patterns/8.PNG"), loadImage("Patterns/9.PNG"), loadImage("Patterns/10.PNG"), loadImage("Patterns/11.png"), loadImage("Patterns/12.jpg"), loadImage("Patterns/14.jpg"), loadImage("Patterns/a.PNG"), loadImage("Patterns/b.PNG"), loadImage("Patterns/13.jpg"), loadImage("Patterns/15.jpg"), loadImage("Patterns/16.jpg"), loadImage("Patterns/g.png"), loadImage("Patterns/h.png"), loadImage("Patterns/j.png"), loadImage("Patterns/k.png"), loadImage("Patterns/17.png"), loadImage("Patterns/l.png"), loadImage("Patterns/m.png"), loadImage("Patterns/n.png"), loadImage("Patterns/o.png"), loadImage("Patterns/p.png"), loadImage("Patterns/q.png"), loadImage("Patterns/r.png"), loadImage("Patterns/18.jpg"), loadImage("Patterns/19.png"), loadImage("Patterns/20.png"), loadImage("Patterns/21.png"), loadImage("Patterns/22.png"), loadImage("Patterns/23.png"), loadImage("Patterns/24.png"), loadImage("Patterns/25.png"), loadImage("Patterns/26.png"), loadImage("Patterns/27.PNG"), loadImage("Patterns/c.PNG"), loadImage("Patterns/28.PNG"), loadImage("Patterns/d.png"), loadImage("Patterns/e.png"), loadImage("Patterns/f.png"), loadImage("Patterns/29.png"), loadImage("Patterns/30.png"), loadImage("Patterns/31.png"), loadImage("Patterns/32.jpg"), loadImage("Patterns/33.PNG"), loadImage("Patterns/34.PNG"));
@@ -69,7 +69,7 @@ function setup() {
   image(img, img.width, 0);
   filter(GRAY);
   
-  qTree = new QuadTree(0,0,img.width,img.height,600, 0) // Edit error limit here (Less = more accurate)
+  qTree = new QuadTree(0,0,img.width,img.height,200, 0) // Edit error limit here (Less = more accurate)
   qTree.update(colors);  // Insert colors into quad-tree and begin chunking
     
   qTree.draw();  // Draw compressed image 
@@ -137,7 +137,7 @@ class QuadTree{
     this.h = h;
     this.errorLim = errorLim; 
     this.depth = depth;
-    this.maxDepth = 6;  // An additional restriction which prevents us to chunk near pixel size regions (If chunks are too small, we wouldn't be doing much compression)
+    this.maxDepth = 7;  // An additional restriction which prevents us to chunk near pixel size regions (If chunks are too small, we wouldn't be doing much compression)
   }
   
   split(){
