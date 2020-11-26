@@ -3,9 +3,8 @@ Converts an image into a gray scale version made out of patterns.
 "https://editor.p5js.org/Mandaranian-Cactus/sketches/GrPeN0J-m"
 
 <table>
-<tr>
-<td>
-<image, src="End Results/Jimi Hendrix (Original).jpg"> 
-</td>
-</tr>
+  <tr>
+    <td><img align="center" src="Images/Nunu (Converted).PNG"></td>
+    <td><img align="center" src="Images/NewsPaper Zombie.PNG"></td>
+  </tr>
 </table>
