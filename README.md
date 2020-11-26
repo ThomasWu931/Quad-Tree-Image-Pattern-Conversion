@@ -7,4 +7,12 @@ Converts an image into a gray scale version made out of patterns.
     <td><img align="center" src="End Results/Nunu (Converted).PNG"></td>
     <td><img align="center" src="End Results/Nunu (Original).png"></td>
   </tr>
+  <tr>
+    <td><img align="center" src="End Results/Nunu (Converted).PNG"></td>
+    <td><img align="center" src="End Results/Nunu (Original).png"></td>
+  </tr>
+  <tr>
+    <td><img align="center" src="End Results/Nunu (Converted).PNG"></td>
+    <td><img align="center" src="End Results/Nunu (Original).png"></td>
+  </tr>
 </table>
